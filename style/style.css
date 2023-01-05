@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  width: 375px;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 0.5rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.container {
+  width: 100%;
+}
+.container .card-container {
+  width: 90%;
+  margin: 2em auto;
+}
+.container .card-container .card {
+  width: 90%;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  background-color: hsl(216deg, 50%, 16%);
+  margin: 0 auto;
+}
+.container .card-container .card img {
+  width: 100%;
+  border-radius: 0.8rem;
+  height: 250px;
+  margin-bottom: 2rem;
+}
+.container .card-container .card .card-details .card-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.container .card-container .card .card-details .card-description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: hsl(215deg, 51%, 70%);
+}
+.container .card-container .card .card-span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.container .card-container .card .card-span .card-price {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+}
+.container .card-container .card .card-span .card-price p {
+  width: 60%;
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 700;
+}
+.container .card-container .card .card-span .card-price img {
+  height: 1.6em;
+  width: 1em;
+  margin: 0;
+}
+.container .card-container .card .card-span .card-time-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  width: 100%;
+}
+.container .card-container .card .card-span .card-time-left p {
+  width: 57%;
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+}
+.container .card-container .card .card-span .card-time-left img {
+  height: 1.4em;
+  width: 1.4em;
+  margin: 0;
+}
+.container .card-container .card .card-line {
+  margin: 0.5rem 0;
+  height: 1px;
+  background-color: hsl(215deg, 32%, 27%);
+}
+.container .card-container .card .card-creator-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  gap: 1rem;
+  font-size: 1.3rem;
+  color: hsl(215deg, 51%, 70%);
+}
+.container .card-container .card .card-creator-section img {
+  width: 3em;
+  height: 3em;
+  margin: 0;
+  border: 0.15rem solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+.container .card-container .card .card-creator-section .creator .cname {
+  color: hsl(0deg, 0%, 100%);
+}
+
+@media screen {
+  html {
+    width: unset;
+  }
+  body {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */

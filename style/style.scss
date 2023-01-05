@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+//PRIMARY
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+//NEUTRAL
+$very-dark-blue-main : hsl(217, 54%, 11%); //(main BG)
+$very-dark-blue-card : hsl(216, 50%, 16%); // (card BG)
+$very-dark-blue-line : hsl(215, 32%, 27%); // (line)
+$white: hsl(0, 0%, 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    width: 375px;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $very-dark-blue-main;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution { 
+    font-size: .5rem; 
+    text-align: center; 
+
+    a {
+        color: hsl(228, 45%, 44%); 
+    }
+  }
+
+.container {
+    width: 100%;
+
+    .card-container {
+        width: 90%;
+        margin: 2em auto;
+        
+        .card {
+            width: 90%;
+            padding: 2rem;
+            border-radius: .8rem;
+            background-color: $very-dark-blue-card;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                border-radius: .8rem;
+                height: 250px;
+                margin-bottom: 2rem;
+            }
+
+            .card-details {
+
+                .card-name {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    margin-bottom: 2rem;
+                }
+
+                .card-description {
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    margin-bottom: 2rem;
+                    color: $soft-blue;
+                }
+            }
+
+            .card-span {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+
+                .card-price {
+                    display: flex;
+                    align-items: center;
+                    gap: .6rem;
+                    width: 100%;
+
+                    p {
+                        width: 60%;
+                        color: $cyan;
+                        font-weight: 700;
+                    }
+             
+                    img {
+                        height: 1.6em;
+                        width: 1em;
+                        margin: 0;
+                    }
+                }
+
+                .card-time-left {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: .6rem;
+                    width: 100%;
+
+                        p {                        
+                            width: 57%;
+                            color: $soft-blue;
+                            font-weight: 300;
+                        }
+                  
+                        img {
+                            height: 1.4em;
+                            width: 1.4em;
+                            margin: 0;
+                    }
+                }
+            }
+
+            .card-line {
+                margin: .5rem 0;
+                height: 1px;
+                background-color: $very-dark-blue-line;
+
+            }
+
+            .card-creator-section {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-top: 1rem;
+                gap: 1rem;
+                font-size: 1.3rem;
+                color: $soft-blue;
+
+                img {
+                    width: 3em;
+                    height: 3em;
+                    margin: 0;
+                    border: .15rem solid $white;
+                    border-radius: 50%;
+                }
+
+                .creator {
+                    .cname {
+                        color: $white;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen  {
+    html {
+        width: unset;
+    }
+
+    body {
+        margin: 0 auto;
+    }
+}
+
